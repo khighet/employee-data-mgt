@@ -32,21 +32,23 @@ $("#submitEmp").on("click", function(event){
 
 database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
-	// theTable = $("#myTable");
-	// theRow = $("<tr>");
+	theTable = $("#myTable");
+	theRow = $("<tr>");
 
-	// var vals = [];
+	var vals = [];
 
-	// vals[0] = $("#name-form").val().trim();
-	// vals[1] = $("#name-form").val().trim();
-	// vals[2] = $("#name-form").val().trim();
-	// vals[3] = $("#name-form").val().trim();
+	vals[0] = childSnapshot.val().name;
+	vals[1] = childSnapshot.val().role;
+	vals[2] = childSnapshot.val().startDate;
+	vals[3] = "7"
+	vals[4] = childSnapshot.val().monthlyRate;
+	vals[5] = "1000"
 
-	// for(var i=0;i<6;i++){
-	// 	theRow.append(($("<td>").html(vals[i])));
-	// }
+	for(var i=0;i<6;i++){
+		theRow.append(($("<td>").html(vals[i])));
+	}
 
-	// theTable.append(theRow);
+	theTable.append(theRow);
 
 });
 
