@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      
+    <title>Employee Data</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  
+    <link rel="stylesheet" href="style.css">
+
+</head>
+  
+<body>
+    
+<div class="container">
+
+    <div class="jumbotron">
+        <h1>Employee Data Management</h1>
+    </div>
+
+    <div class="card">
+
+        <div class="card-header">
+            Current Employees
+        </div>
+
+        <table id="myTable" class="table">
+                <thead>
+                  <tr>
+                    <th>Employee Name</th>
+                    <th>Role</th>
+                    <th>Start Date</th>
+                    <th>Months Worked</th>
+                    <th>Monthly Rate ($)</th>
+                    <th>Total Billed ($)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Mark Otto</td>
+                    <td>CEO</td>
+                    <td>13/06/15</td>
+                    <td>2000</td>
+                    <td>90000</td>
+                  </tr>
+                </tbody>
+        </table>
+
+    </div>  
+
+    <div class="card addEmployee">
+
+      <div class="card-header ">
+        Add Employee
+      </div>
+
+      <form class="p-2">
+
+        <label for="name">Employee Name</label>
+          <input type="text" id="name">
+
+        <label for="role">Role</label>
+          <input type="text" id="role">
+
+        <label for="date">Start Date (DD/MM/YY)</label>  
+          <input type="text" id="date">
+
+        <label for="rate">Monthly Rate</label>
+          <input type="text" id="rate">
+          
+      </form>
+
+    </div>
+
+</div> 
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>

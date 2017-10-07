@@ -1,0 +1,24 @@
+.addEmployee {
+    margin-top: 40px;
+}
+
+input[type=text] { 
+    width: 100%;
+    padding: 12px 5px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.jumbotron {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.card-header {
+    background-color: blue;
+    color: white;
+}
