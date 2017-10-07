@@ -39,10 +39,10 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
 	vals[0] = childSnapshot.val().name;
 	vals[1] = childSnapshot.val().role;
-	vals[2] = childSnapshot.val().startDate;
-	vals[3] = "7"
+	vals[2] = moment.unix(childSnapshot.val().startDate).format("MM/DD/YY");
+	vals[3] = moment().diff(moment.unix(empStart, "X"), "months");
 	vals[4] = childSnapshot.val().monthlyRate;
-	vals[5] = "1000"
+	vals[5] = vals[3]*vals[4];
 
 	for(var i=0;i<6;i++){
 		theRow.append(($("<td>").html(vals[i])));
