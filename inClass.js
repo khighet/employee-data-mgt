@@ -1,26 +1,32 @@
+
 var config = {
-    apiKey: “AIzaSyCe-qPiyaRmh_Z2JAPBRt_fM7KvViGlVRY”,
-    authDomain: “employee-data-mgt.firebaseapp.com”,
-    databaseURL: “https://employee-data-mgt.firebaseio.com”,
-    projectId: “employee-data-mgt”,
-    storageBucket: “”,
-    messagingSenderId: “295881416440"
- };
+    apiKey: "AIzaSyCe-qPiyaRmh_Z2JAPBRt_fM7KvViGlVRY",
+    authDomain: "employee-data-mgt.firebaseapp.com",
+    databaseURL: "https://employee-data-mgt.firebaseio.com",
+    projectId: "employee-data-mgt",
+    storageBucket: "employee-data-mgt.appspot.com",
+    messagingSenderId: "295881416440"
+  };
+
  firebase.initializeApp(config);
+ 
+var database = firebase.database();
 
-var submitButton = $("#tid");
+var submitButton = $("#submitEmp");
 
-submitButton.on("click", function(e){
+$("#submitEmp").on("click", function(event){
+
+	
 
 	var newEmp = {
-		name: $("#name-form").val().trim(),
-		role: $("#name-form").val().trim(),
-		startDate: $("#name-form").val().trim(),
-		MonthlyRate: $("#name-form").val().trim()
+		name: $("#name").val().trim(),
+		role: $("#role").val().trim(),
+		startDate: $("#date").val().trim(),
+		monthlyRate: $("#rate").val().trim()
 
 	}
 
-	database.ref().push(newEmp);	
+	database.ref().push(newEmp);
 
 });
 
@@ -42,6 +48,6 @@ database.ref().on("child_added", function(childSnapshot, prevChildKey) {
 
 	// theTable.append(theRow);
 
-}
+});
 
 

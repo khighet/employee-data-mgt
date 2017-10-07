@@ -14,10 +14,16 @@
   
     <link rel="stylesheet" href="style.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    
+
+
 </head>
   
 <body>
     
+  <script src="https://www.gstatic.com/firebasejs/4.5.0/firebase.js"></script>
+  
 <div class="container">
 
     <div class="jumbotron">
@@ -39,15 +45,16 @@
                     <th>Months Worked</th>
                     <th>Monthly Rate ($)</th>
                     <th>Total Billed ($)</th>
+                    
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td>Mark Otto</td>
-                    <td>CEO</td>
-                    <td>13/06/15</td>
-                    <td>2000</td>
-                    <td>90000</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
                   </tr>
                 </tbody>
         </table>
@@ -73,12 +80,19 @@
 
         <label for="rate">Monthly Rate</label>
           <input type="text" id="rate">
+        
+      <button id="submitEmp" type="button" class="btn btn-primary">Submit</button>
           
       </form>
+
+      
 
     </div>
 
 </div> 
+
+<script src="inClass.js"></script>    
+
 
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
